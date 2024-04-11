@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño y Programación Web I</title>
+</head>
+<body>
+    <h1>Condicionales</h1>
+    <script>
+        var edad = +prompt('¿Cuantos años tenes?');
+        if( edad > 18 ){  // Si 
+            document.write('<h2>Sos mayor de Edad 😎 </h2>');
+        } else { // Si no
+            document.write('<h2> Lo siento, sos menor de edad 😪 </h2>');
+        }
+        // Un = es Asignación
+        var desayuno = prompt('¿ Mate 🧉 o Cafe ☕?');
+        // Dos == es comparación
+        if( desayuno.toLowerCase()  == 'mate'){
+            document.write('<h2> Podemos ser amigo 😀 </h2>');
+        } else {
+            document.write('<h2> Desayuna solo 🤨 </h2>');
+        }
+
+    </script>
+</body>
+</html>
