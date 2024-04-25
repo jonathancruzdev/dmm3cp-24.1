@@ -23,7 +23,7 @@
             // - anciano (mayor de 65 años). 
             let edad = +prompt('Ingrese la edad');
 
-            if(  edad < 2) {
+            if(  edad > 0 && edad < 2) {
                 document.write('<div class="alert alert-info"> Sos un Bebé </div>');
             } else if( edad >= 2  &&  edad <= 11){
                 document.write('<div class="alert alert-info"> Sos un Niño </div>');
