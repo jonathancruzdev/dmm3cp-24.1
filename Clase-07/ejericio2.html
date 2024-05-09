@@ -10,34 +10,33 @@
 </head>
 <body>
     <header class="bg-primary text-white">
-        <h1> Bucles Abiertos</h1>
+        <h1> Guía 06 - Ejercicio 02</h1>
     </header>
 
     <main class="container mt-2">
-        <a href="guia5-5.html"> Posible solución del Ejercicio 05 (Guía 05)</a>
 
-        <br>
-
-        <a href="ejericio2.html">Posible solución del Ejericio 02 (Guía 06)</a>
+        <table class="table">
+            <tr>
+                <th>Alumno</th><th>Nota</th>
+            </tr>
 
         <script>
-            // Realizar un programa que solicite al usuario productos hasta que le usuario escriba como nombre "Salir"
+            // Ejercicio 02: Realizar un programa que pida el ingreso de un alumno y su correspondiente nota en un parcial. El programa termina cuando se recibe como nombre de alumno la palabra “fin”. Mostrar los datos ingresados en una tabla.
+            let alumno = prompt('Ingrese el alumno');
+            let nota = +prompt('Ingrese la nota');
 
-            let nombre; // 📌 Variable de Control
-            document.write('<ul>');
-            do {
-                // 📌 Actualizo la variable de Control
-                nombre = prompt('Ingresa el Producto');
-                if( nombre != 'salir'){
-                    document.write('<li>' + nombre + '</li>');
+            while( alumno != 'fin'){
+                document.write('<tr><td>'+ alumno +'</td><td>' + nota +'</td></tr>');
+
+                alumno = prompt('Ingrese el alumno');
+                if ( alumno != 'fin'){
+                    nota = +prompt('Ingrese la nota');
                 }
-                
-            } while( nombre.toLowerCase() != 'salir') // 📌 Condición de Corte
-            document.write('</ul>');
-
-
-
+            }
         </script>
+
+        
+        </table>
     </main>
 
     <footer class="bg-dark text-white">
